@@ -1,0 +1,27 @@
+@use "variables" as v;
+$shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+@mixin inputSelect {
+	border: none;
+	border-radius: v.$radius;
+	padding: 1rem;
+}
+
+.item {
+	input {
+		@include inputSelect;
+		width: 70%;
+		@media (max-width: 768px) {
+			width: 50%;
+		}
+	}
+	select {
+		@include inputSelect;
+		margin-left: 0.5rem;
+	}
+
+	input:focus,
+	select:focus {
+		outline: none;
+		box-shadow: $shadow;
+	}
+}

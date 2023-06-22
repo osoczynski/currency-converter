@@ -1,0 +1,22 @@
+.item input {
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .item input {
+    width: 50%;
+  }
+}
+.item select {
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-left: 0.5rem;
+}
+.item input:focus,
+.item select:focus {
+  outline: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
